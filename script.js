@@ -38,51 +38,67 @@ document.querySelector('#find').addEventListener('click', () => {
                 }else if (result.types[0].type.name.toLowerCase() == 'fire'){
                     document.querySelector('#pokemonContent').style.background = "rgb(195, 0, 0)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if(result.types[0].type.name.toLowerCase() == 'bug'){
                     document.querySelector('#pokemonContent').style.background = "rgb(39, 105, 0)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'dark'){
                     document.querySelector('#pokemonContent').style.background = "rgb(37, 0, 101)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if(result.types[0].type.name.toLowerCase() == 'dragon'){
                     document.querySelector('#pokemonContent').style.background = "rgb(37, 117, 146)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'electric'){
                     document.querySelector('#pokemonContent').style.background = "rgb(249, 241, 146)";
                     document.querySelector('#cardContent').style.color = 'black';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if(result.types[0].type.name.toLowerCase() == 'fairy'){
                     document.querySelector('#pokemonContent').style.background = "rgb(255, 0, 128)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if(result.types[0].type.name.toLowerCase() == 'fighting'){
                     document.querySelector('#pokemonContent').style.background = "rgb(255, 94, 0)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'ghost'){
                     document.querySelector('#pokemonContent').style.background = "rgb(79, 0, 118)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'grass'){
                     document.querySelector('#pokemonContent').style.background = "rgb(57, 212, 0)";
                     document.querySelector('#cardContent').style.color = 'black';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'ground'){
                     document.querySelector('#pokemonContent').style.background = "rgb(183, 122, 0)";
                     document.querySelector('#cardContent').style.color = 'black';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'ice'){
                     document.querySelector('#pokemonContent').style.background = "rgb(142, 207, 255)";
                     document.querySelector('#cardContent').style.color = 'black';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'normal'){
                     document.querySelector('#pokemonContent').style.background = "rgb(186, 96, 138)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'poison'){
                     document.querySelector('#pokemonContent').style.background = "rgb(60, 0, 199)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'psychic'){
                     document.querySelector('#pokemonContent').style.background = "rgb(255, 0, 154)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'rock'){
                     document.querySelector('#pokemonContent').style.background = "rgb(119, 76, 0)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }else if (result.types[0].type.name.toLowerCase() == 'steel'){
                     document.querySelector('#pokemonContent').style.background = "rgb(0, 169, 147)";
                     document.querySelector('#cardContent').style.color = 'white';
+                    document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
                 }
 
                 document.querySelector('#newSearch').style.display = "block";
