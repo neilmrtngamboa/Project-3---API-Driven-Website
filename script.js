@@ -14,10 +14,24 @@ document.querySelector('#find').addEventListener('click', () => {
             }else{
                 document.querySelector('#pokemonContent').innerHTML +=
 
-                `The pokemon name is ${result.name.toUpperCase()}
-                Pokemon Type: ${result.types[0].type.name.toUpperCase()}
-                <img src="${result.sprites.front_default}" id="pokemonImg" alt="" style="height: 10rem; width: 10rem;">
-                `
+                ` <div class="card d-flex mx-auto bg-light" style=" width: 15rem;">
+                    <div class="card-body shadow">
+                    <h3 class="text-center">${result.name.toUpperCase()}</h3>
+                    <img class="img-fluid d-flex mx-auto" src="${result.sprites.front_default}" alt="" style="height: 10rem; width: 10rem;">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h5>Type: ${result.types[0].type.name.toUpperCase()} </h5>
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Weight: ${result.weight}</h5>
+                        </div>
+                        <hr>
+                        <h5>Abilities: ${result.abilities[0].ability.name} , ${result.abilities[1].ability.name} </h5>
+                    </div>                    
+                </div>
+                </div>`
+
+
                 if(result.types[0].type.name.toLowerCase() == 'water'){
                     document.querySelector('#pokemonContent').style.background = "rgb(0, 255, 255)";
                 }else if (result.types[0].type.name.toLowerCase() == 'fire'){
