@@ -16,7 +16,7 @@ document.querySelector('#find').addEventListener('click', () => {
 
                 `The pokemon name is ${result.name.toUpperCase()}
                 Pokemon Type: ${result.types[0].type.name.toUpperCase()}
-                <img src="${result.sprites.front_default}" id="pokemonImg" alt="">
+                <img src="${result.sprites.front_default}" id="pokemonImg" alt="" style="height: 10rem; width: 10rem;">
                 `
                 if(result.types[0].type.name.toLowerCase() == 'water'){
                     document.querySelector('#pokemonContent').style.background = "rgb(0, 255, 255)";
