@@ -4,13 +4,15 @@ document.querySelector('#find').addEventListener('click', () => {
 
     const pokemonName = document.querySelector('#search').value.toLowerCase();  
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-        .then((response) => response.json())
+        .then((response) =>  response.json())
         .then((result) => {console.log(result)
+
 
             document.querySelector('#pokemonContent').innerHTML +=
 
             `The pokemon name is ${result.name.toUpperCase()}
             Pokemon Type: ${result.types[0].type.name.toUpperCase()}
+            
 
             `
             if(result.types[0].type.name.toLowerCase() == 'water'){
@@ -68,6 +70,8 @@ document.querySelector('#find').addEventListener('click', () => {
 
         })
         .catch((error) => console.error(error));
+
+        document.querySelector('#search').value = "";
 
 })    
     
