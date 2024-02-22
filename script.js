@@ -7,6 +7,8 @@ document.querySelector('#find').addEventListener('click', () => {
         .then((response) =>  response.json())
         .then((result) => {console.log(result)
 
+            
+
             if(document.querySelector('#search').value == ""){
                 alert("Field is empty!");
             }else{
@@ -15,7 +17,6 @@ document.querySelector('#find').addEventListener('click', () => {
                 `The pokemon name is ${result.name.toUpperCase()}
                 Pokemon Type: ${result.types[0].type.name.toUpperCase()}
                 
-    
                 `
                 if(result.types[0].type.name.toLowerCase() == 'water'){
                     document.querySelector('#pokemonContent').style.background = "rgb(0, 255, 255)";
@@ -80,7 +81,7 @@ document.querySelector('#find').addEventListener('click', () => {
 
 
         })
-        .catch((error) => console.error(error));
+        .catch((error) => alert('Pokemon Not found!'));//console.error(error));
 
 
 })
