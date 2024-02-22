@@ -79,5 +79,9 @@ document.querySelector('#find').addEventListener('click', () => {
 
         document.querySelector('#search').value = "";
 
-})    
+})
+
+function newSearch (){
+    location.reload();
+}
     
