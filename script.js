@@ -77,11 +77,12 @@ document.querySelector('#find').addEventListener('click', () => {
         })
         .catch((error) => console.error(error));
 
-        document.querySelector('#search').value = "";
+        
+        document.querySelector('#newSearch').style.display = "block";
+        document.querySelector('#newSearch').addEventListener('click', () => {
+            location.reload();
+        });
 
 })
 
-function newSearch (){
-    location.reload();
-}
     
