@@ -68,20 +68,20 @@ document.querySelector('#find').addEventListener('click', () => {
                     document.querySelector('#pokemonContent').style.background = "rgb(0, 169, 147)";
                     document.querySelector('#cardContent').style.color = 'white';
                 }
+
+                document.querySelector('#newSearch').style.display = "block";
+                document.querySelector('#find').disabled = true;
+                document.querySelector('#newSearch').addEventListener('click', () => {
+                    location.reload();
+                });
+              
             }
 
-
-          
 
 
         })
         .catch((error) => console.error(error));
 
-        
-        document.querySelector('#newSearch').style.display = "block";
-        document.querySelector('#newSearch').addEventListener('click', () => {
-            location.reload();
-        });
 
 })
 
