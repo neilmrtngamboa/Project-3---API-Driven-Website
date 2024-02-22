@@ -35,7 +35,6 @@ document.querySelector('#find').addEventListener('click', () => {
                 if(result.types[0].type.name.toLowerCase() == 'water'){
                     document.querySelector('#pokemonContent').style.background = "rgb(0, 255, 255)";
                     document.querySelector('#pokemonContent').style.backgroundImage = "url(/images/bg-pokeballs.png)";
-                    
                 }else if (result.types[0].type.name.toLowerCase() == 'fire'){
                     document.querySelector('#pokemonContent').style.background = "rgb(195, 0, 0)";
                     document.querySelector('#cardContent').style.color = 'white';
